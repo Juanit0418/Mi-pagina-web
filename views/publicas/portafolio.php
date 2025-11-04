@@ -172,7 +172,7 @@
   
       <p class="portafolio__nota">
           Muy pronto agregaré nuevos proyectos y colaboraciones reales.  
-          Si te gustaría ser parte de ellos, <a class="portafolio__nota--enlace" href="/contacto">contáctame haciendo click aquí</a>.
+          Si te gustaría ser parte de ellos, contáctame haciendo <a class="portafolio__nota--enlace" href="/contacto">click aquí</a>.
       </p>
   
   </section>
