@@ -1,0 +1,47 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.portafolio {
+  border-radius: 2rem;
+  background-color: v.$principal;
+  color: v.$blanco;
+  padding: 0 2rem 2rem 2rem;
+
+  &__grid {
+    background-color: v.$secundario;
+    padding: 2rem;
+    border-radius: 2rem;
+
+    @include m.tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+    }
+  }
+
+  &__nota {
+    
+    &--enlace {
+      color: v.$blanco;
+    }
+  }
+}
+
+.proyecto {
+  background-color: v.$principal;
+  border-radius: 2rem;
+  padding: 2rem 0.5rem;
+  margin-bottom: 2rem;
+
+  &__boton {
+    margin: 0 auto;
+  }
+
+  &--largo {
+
+    @include m.tablet {
+
+      grid-column: 1 / 3;
+    }
+  }
+}

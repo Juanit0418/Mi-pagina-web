@@ -1,0 +1,61 @@
+@use 'variables' as v;
+
+/** Media Queries **/
+@mixin telefono {
+    @media (min-width: v.$telefono) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+@mixin pc {
+    @media (min-width: v.$pc) {
+        @content;
+    }
+}
+@mixin pc_grande {
+    @media (min-width: v.$pc_grande) {
+        @content;
+    }
+}
+
+@mixin contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+@mixin contenedor_md {
+    width: 95%;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+@mixin contenedor_sm {
+    width: 95%;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+@mixin heading {
+    font-family: v.$fuente-principal;
+    font-weight: v.$black;
+    margin: 2rem 0;
+}
+
+@mixin nombre_pagina {
+    @include heading();
+    margin: 6rem 0 3rem 0;
+    text-align: center;
+}
+
+@mixin descripcion_pagina {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: v.$delgada;
+    color: v.$gris-oscuro;
+    margin-bottom: 5rem;
+}

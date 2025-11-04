@@ -1,0 +1,16 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.sobre-mi {
+  background-color: v.$principal;
+  color: v.$blanco;
+  border-radius: 2rem;
+  padding: 0 2rem 2rem 2rem;
+
+  &__separador {
+    background-color: v.$secundario;
+    color: v.$negro;
+    border-radius: 2rem;
+    padding: 0 2rem 2rem 2rem;
+  }
+}
