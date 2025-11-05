@@ -463,6 +463,9 @@ h3 {
   color: #FFFFFF;
   border-radius: 2rem;
 }
+.contacto__heading {
+  margin: 0;
+}
 
 .portafolio {
   border-radius: 2rem;
@@ -612,6 +615,11 @@ h1, h2, h3 {
     justify-content: flex-end;
   }
 }
+.formulario__texto {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.4rem;
+}
 
 footer {
   background-color: #ffb900;
@@ -701,5 +709,79 @@ ol {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.menu-redes__enlace::before {
+  color: #FFFFFF;
+  font-size: 2rem;
+  display: inline-block;
+  font-style: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 7 Brands";
+  font-weight: 400;
+  margin-right: 0.5rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+.menu-redes__enlace[href*="facebook.com"]::before {
+  content: "\f39e";
+}
+.menu-redes__enlace[href*="whatsapp.com"]::before, .menu-redes__enlace[href*="wa.me"]::before {
+  content: "\f232";
+}
+.menu-redes__enlace[href*="github.com"]::before {
+  content: "\f09b";
+}
+.menu-redes__enlace[href*="tiktok.com"]::before {
+  content: "\e07b";
+}
+.menu-redes__enlace[href*="instagram.com"]::before {
+  content: "\f16d";
+}
+.menu-redes__enlace[href*="youtube.com"]::before {
+  content: "\f167";
+}
+.menu-redes__enlace[href*="twitter.com"]::before, .menu-redes__enlace[href*="x.com"]::before {
+  content: "\e61b";
+}
+.menu-redes__enlace[href*="facebook.com"]:hover::before {
+  color: #1877f2;
+  background-color: #FFFFFF;
+}
+.menu-redes__enlace[href*="whatsapp.com"]:hover::before, .menu-redes__enlace[href*="wa.me"]:hover::before {
+  color: #25d366;
+  background-color: #FFFFFF;
+}
+.menu-redes__enlace[href*="github.com"]:hover::before {
+  color: #171515;
+  background-color: #FFFFFF;
+}
+.menu-redes__enlace[href*="tiktok.com"]:hover::before {
+  color: #010101;
+  background-color: #FFFFFF;
+}
+.menu-redes__enlace[href*="instagram.com"]:hover::before {
+  color: #e4405f;
+  background-color: #FFFFFF;
+}
+.menu-redes__enlace[href*="youtube.com"]:hover::before {
+  color: #ff0000;
+  background-color: #FFFFFF;
+}
+.menu-redes__enlace[href*="twitter.com"]:hover::before, .menu-redes__enlace[href*="x.com"]:hover::before {
+  color: #010101;
+  background-color: #FFFFFF;
+}
+.menu-redes__enlace:hover::before {
+  transform: scale(1.1);
+}
+.menu-redes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 0 2rem 0;
+}
+.menu-redes__ocultar {
+  display: none;
 }
 /*# sourceMappingURL=app.css.map */

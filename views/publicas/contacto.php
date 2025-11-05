@@ -1,7 +1,37 @@
 <main class="contacto contenedor seccion">
-  <h1>Contacto</h1>
+  <h1 class="contacto__heading">Contacto</h1>
 
   <form action="/contacto"  method="POST" class="formulario">
+    <p class="formulario__texto">Redes Sociales</p>
+
+    <nav class="menu-redes"> 
+    <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/share/1BoJqDVqKy/">
+      <span class="menu-redes__ocultar">Facebook</span>
+    </a>
+
+    <a class="menu-redes__enlace" href="https://wa.me/593991787417" target="_blank" rel="noopener noreferrer">
+      <span class="menu-redes__ocultar">Whatsapp</span>
+    </a>
+
+    
+    <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://x.com/JSanz1478571?t=goxyoDuBUL2wvlQxqV2PZg&s=091">
+      <span class="menu-redes__ocultar">X</span>
+    </a>
+    
+    <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/juansanmartin2025?igsh=b2k3YXJrdjExM256">
+      <span class="menu-redes__ocultar">Instagram</span>
+    </a>
+    
+    <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://www.tiktok.com/@c._258?_r=1&_t=ZM-918CyXF30km">
+      <span class="menu-redes__ocultar">Tiktok</span>
+    </a>
+    
+    <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://github.com/Juanit0418">
+      <span class="menu-redes__ocultar">Github</span>
+    </a>
+  </nav>
+
+  <p class="formulario__texto">o</p>
     <fieldset>
       <legend>Contactame llenado este formulario</legend>
       <?php include_once __DIR__ . '/../templates/alertas.php'; ?>

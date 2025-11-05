@@ -5,4 +5,8 @@
   background-color: v.$principal;
   color: v.$blanco;
   border-radius: 2rem;
+
+  &__heading {
+    margin: 0;
+  }
 }
