@@ -718,7 +718,7 @@ ol {
   font-style: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 7 Brands";
+  font-family: "Font Awesome 6 Brands";
   font-weight: 400;
   margin-right: 0.5rem;
   transition: color 0.3s ease, transform 0.2s ease;
@@ -769,7 +769,7 @@ ol {
   background-color: #FFFFFF;
 }
 .menu-redes__enlace[href*="twitter.com"]:hover::before, .menu-redes__enlace[href*="x.com"]:hover::before {
-  color: #010101;
+  color: #000000;
   background-color: #FFFFFF;
 }
 .menu-redes__enlace:hover::before {

@@ -69,41 +69,41 @@
       font-style: normal;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      font-family: "Font Awesome 7 Brands";
+      font-family: "Font Awesome 6 Brands"; // ✅ versión correcta
       font-weight: 400;
       margin-right: 0.5rem;
       transition: color 0.3s ease, transform 0.2s ease;
     }
 
-    // --- Íconos base ---
+    // --- Íconos base actualizados (FA6) ---
     &[href*="facebook.com"]::before {
-      content: "\f39e";
+      content: "\f39e"; // facebook-f
     }
 
     &[href*="whatsapp.com"]::before,
     &[href*="wa.me"]::before {
-      content: "\f232";
+      content: "\f232"; // whatsapp
     }
 
     &[href*="github.com"]::before {
-      content: "\f09b";
+      content: "\f09b"; // github
     }
 
     &[href*="tiktok.com"]::before {
-      content: "\e07b";
+      content: "\e07b"; // tiktok
     }
 
     &[href*="instagram.com"]::before {
-      content: "\f16d";
+      content: "\f16d"; // instagram
     }
 
     &[href*="youtube.com"]::before {
-      content: "\f167";
+      content: "\f167"; // youtube
     }
 
     &[href*="twitter.com"]::before,
     &[href*="x.com"]::before {
-      content: "\e61b";
+      content: "\e61b"; // x-twitter (nuevo en FA6)
     }
 
     // --- Colores al pasar el ratón ---
@@ -140,11 +140,11 @@
 
     &[href*="twitter.com"]:hover::before,
     &[href*="x.com"]:hover::before {
-      color: #010101;
+      color: #000000;
       background-color: v.$blanco;
     }
 
-    // Animación opcional (ligero zoom)
+    // --- Animación opcional ---
     &:hover::before {
       transform: scale(1.1);
     }
